@@ -277,3 +277,52 @@ border: none;
     color: #f0a874;
     cursor: pointer;
 }
+.popup{
+    width: 600px;
+    background: #151515;
+    border-radius: 8px;
+    border: 5px solid white;
+    position: absolute;
+    top: 0px;
+    left: 625px;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 1s, top 1s;
+}
+#popup::backdrop{
+    backdrop-filter: blur(25px);
+}
+.openpopup{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    top: 2050px;
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup h3{
+    color: #E66E17;
+padding-top: 10px;
+padding-bottom: 20px;
+font-size: 26px;
+}
+
+.popup button{
+    width: 30%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #E66E17;
+    color:#fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.popup p{
+    font-size: large;
+}
