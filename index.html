@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="titlebar" id="home">
       <div class="titlebar2">
         <a href="#home">Home</a>
@@ -111,20 +111,21 @@
       </ul>
       <img src="boy.png" alt="" />
     </div>
-
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="items"><h1>Contact Me</h1></div>
       <div class="items">
         <div class="item2">
-          <input type="text" placeholder="Name" />
+          <form id="fid">
+          <input type="text" id="name" placeholder="Name" required />
         </div>
         <div class="item2">
-          <input type="email" placeholder="Email" />
+          <input type="email" id="email" placeholder="Email" required />
         </div>
         <div class="item2">
-          <input type="number" placeholder="Phone Number" />
+          <input type="number" id="phone" placeholder="Phone Number" required />
         </div>
-        <div class="item2"><button type="submit">Submit</button></div>
+        <button class="item2" type="submit" onclick="openpopup()">Submit</button>
+      </form>
       </div>
       <div class="items" id="links">
         <a
@@ -144,5 +145,14 @@
         ></a>
       </div>
     </div>
+    <div class="popup" id="popup">
+      <h2>Thank You!!</h2>
+      <h3 id="h3name"></h3>
+      <p>Your Conatct details have been saved.</p>
+      <button type="submit" onclick="closepopup()">OK</button>
+    </div>
+
+    <script src="app.js">
+    </script>
   </body>
 </html>
