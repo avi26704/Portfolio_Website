@@ -152,7 +152,26 @@
       <button type="submit" onclick="closepopup()">OK</button>
     </div>
 
-    <script src="app.js">
+    <script src="app.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "98b8d783-eebf-4195-8857-e9dd7f1a0059",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "98b8d783-eebf-4195-8857-e9dd7f1a0059",
+      "webhookId": "71f79167-d091-484c-9770-3ed20858a0ea",
+      "lazySocket": true,
+      "themeName": "prism",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/b4be62c8-0435-48d9-9d24-d3a59dedc4bd/v83602/style.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
     </script>
   </body>
 </html>
