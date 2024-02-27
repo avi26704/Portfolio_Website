@@ -19,7 +19,27 @@ let popup = document.getElementById("popup");
           document.getElementById("contact").style.background="#151515";
           popup.classList.add("openpopup");
         }
-      }
+
+        const serviceID = "service_mjkc2mq";
+  const templateID = "template_4uajmig";
+  var params = {
+    name: name,
+    email: email,
+    phone: phone,
+  };
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
 
       function closepopup() {
         popup.classList.remove("openpopup");
