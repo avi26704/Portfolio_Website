@@ -149,6 +149,7 @@
       <h2>Thank You!!</h2>
       <h3 id="h3name"></h3>
       <p>Your Conatct details have been saved.</p>
+      <p>Please Check your mail box for more information.</p>
       <button type="submit" onclick="closepopup()">OK</button>
     </div>
 
@@ -173,5 +174,15 @@
   });
 </script>
     </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "r7qW1OrYvw-ylgGTI",
+      });
+   })();
+</script>
   </body>
 </html>
